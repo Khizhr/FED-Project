@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -158,6 +159,8 @@ header {
 }
 
 /* Responsive Design */
+
+/* Mobile Phones */
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -202,6 +205,34 @@ header {
     .story-content img,
     .impact-content img {
         margin-top: 20px;
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-content img,
+    .story-content img,
+    .innovations-content img,
+    .impact-content img,
+    .about-content p,
+    .story-content p,
+    .innovations-content p,
+    .impact-content p {
+        width: 50%;
+    }
+}
+
+/* Desktops and Large Laptops */
+@media (min-width: 1025px) {
+    .about-content img,
+    .story-content img,
+    .innovations-content img,
+    .impact-content img,
+    .about-content p,
+    .story-content p,
+    .innovations-content p,
+    .impact-content p {
+        width: 45%;
     }
 }
 
