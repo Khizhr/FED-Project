@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: transparent;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.model-x h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.model-x img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.specifications {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.specifications h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.specifications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.specifications li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.image-grid {
+    margin-top: 40px;
+}
+
+.image-grid h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid img {
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #000;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .specifications,
+    .grid {
+        text-align: center;
+    }
+
+    .grid img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
