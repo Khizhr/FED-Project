@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -163,9 +162,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive Design */
-
-/* Mobile Phones (max-width: 768px) */
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -207,7 +203,6 @@ footer {
     }
 }
 
-/* Tablets and Small Laptops (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .specifications {
         text-align: center;
@@ -222,7 +217,6 @@ footer {
     }
 }
 
-/* Desktops and Large Laptops (min-width: 1025px) */
 @media (min-width: 1025px) {
     .specifications {
         text-align: left;
