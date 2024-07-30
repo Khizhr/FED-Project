@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +152,9 @@ footer {
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
 }
 
+/* Responsive Design */
+
+/* Mobile Phones (max-width: 768px) */
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -170,5 +174,47 @@ footer {
 
     .menu-toggle {
         display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+/* Tablets and Small Laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 9px 18px;
+    }
+}
+
+/* Desktops and Large Laptops (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
     }
 }
