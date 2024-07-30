@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -139,7 +138,6 @@ header {
     font-size: 1.2rem;
 }
 
-/* Alternate layout for every other section */
 .story-content {
     flex-direction: row-reverse;
 }
@@ -158,9 +156,6 @@ header {
     margin-right: 10;
 }
 
-/* Responsive Design */
-
-/* Mobile Phones */
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -208,7 +203,6 @@ header {
     }
 }
 
-/* Tablets and Small Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
     .about-content img,
     .story-content img,
@@ -222,7 +216,6 @@ header {
     }
 }
 
-/* Desktops and Large Laptops */
 @media (min-width: 1025px) {
     .about-content img,
     .story-content img,
